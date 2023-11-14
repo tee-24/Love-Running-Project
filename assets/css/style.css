@@ -1,4 +1,4 @@
-/* Google font imprt */
+/* Google font import */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 /* Asterisk wildcard selector to override default styles-applies to all elements */
 *{
@@ -92,7 +92,7 @@ footer{
     background-color: green;
 }
 
-/* Medi query: tablets and larger (768px+) */
+/* Media query: tablets and larger (768px+) */
 @media screen and (min-width:768px) {
     /* Header */
     nav {
@@ -125,5 +125,12 @@ footer{
     main {
         /* push main content down to accommodate larger header */
         margin-top: 79px;
+    }
+}
+/* Media query: laptops and larger (992px+) */
+@media screen and (min-width:992px) {
+    /* Header */
+     #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
     }
 }
