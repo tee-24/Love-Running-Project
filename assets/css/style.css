@@ -91,6 +91,7 @@ main {
     flex: 1 0 auto;
     margin-top: 47px;
 }
+
 /* Hero section */
 #hero {
     height: 600px;
@@ -116,7 +117,7 @@ main {
     color: #ffffff;
 }
 
-#reasons{
+#reasons {
     margin: 20px auto;
     width: 90%;
 }
@@ -146,8 +147,8 @@ main {
 }
 
 #circle-cover-bg {
-    background: url("../images/reasons-image.webp" ) no-repeat top center/cover ;
-    margin-bottom:20px ;
+    background: url("../images/reasons-image.webp") no-repeat top center/cover;
+    margin-bottom: 20px;
     height: 90vw;
     width: 90vw;
     border-radius: 50%;
@@ -159,6 +160,13 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+/* Meetup times section */
+#times {
+    background: url("../images/dublin-city.webp") no-repeat center/cover;
+    /* Handles responsivity without the need for a media query */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* Footer */
@@ -211,6 +219,7 @@ main {
         /* push main content down to accommodate larger header */
         margin-top: 79px;
     }
+
     /* Hero */
     #cover-text {
         width: 300px;
@@ -218,19 +227,22 @@ main {
     }
 
     /* Reasons section */
-    #benefits-physical, #benefits-mental {
+    #benefits-physical,
+    #benefits-mental {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
-        #benefits-physical > div,
-        #benefits-mental > div {
-            width: 75%;
-        }
-        #benefits-physical>div {
-            text-align: end;
-            align-self: flex-end;
-        }
+
+    #benefits-physical>div,
+    #benefits-mental>div {
+        width: 75%;
+    }
+
+    #benefits-physical>div {
+        text-align: end;
+        align-self: flex-end;
+    }
 }
 
 
@@ -245,13 +257,14 @@ main {
 
 /* Media query: screens 1200px and larger (1200px+) */
 @media screen and (min-width:1200px) {
+
     /* Reasons section */
     #benefits {
         display: flex;
         flex-direction: row;
     }
 
-    #benefits > div {
+    #benefits>div {
         flex: 1;
     }
 
@@ -260,14 +273,14 @@ main {
     }
 
     #benefits-mental {
-        order:1;
+        order: 1;
     }
 
-    #benefits-mental > div {
+    #benefits-mental>div {
         align-self: flex-start;
     }
 
-    #benefits-physical > div {
+    #benefits-physical>div {
         align-self: flex-end;
     }
 }
